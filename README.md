@@ -1,8 +1,5 @@
 /**
 * Simple CRUD Application using Spring Boot + H2 Database
-* Author : palash.debnath5@gmail.com
-* Position: Software Developer - Full Stack
-* Purpose : Learn Usage of H2 Database
 *
 */
 
@@ -26,7 +23,7 @@ To use H2 database in  Spring Boot project just have to add a dependency in you 
 		<groupId>com.h2database</groupId>
 		<artifactId>h2</artifactId>
 		<scope>runtime</scope>
-</dependency>
+	</dependency>
 
 H2 provide a web interface called H2 console to see the data. 
 Now enable H2 console in the application.properties file located inside /src/main/resources/application.properties
@@ -43,9 +40,10 @@ Spring use bellow configuration to use h2 database automatically
 	spring.datasource.username = sa				(sa = server administraton)
 	spring.datasource.password = 
 
-spring.jpa.database-platform = org.hibernate.dialect.H2Dialect
+spring.jpa.database-platform = org.hibernate.dialect.H2Dialect# SpringH2Crud
 
-
-
-Find a Sample project of CRUD where I used H2database. 
-https://github.com/Palash-it/spring-boot-h2-database-crud
+JUST RUN:
+mvn spring-boot:run
+OR
+mvn package
+java -jar target/{file with jar extension}
