@@ -1,7 +1,4 @@
-/**
-* Simple CRUD Application using Spring Boot + H2 Database
-*
-*/
+* CRUD Application using Spring Boot + H2 Database
 
 Spring Boot + H2 Database Configuration. Why, what and how H2 database is useful?
 
@@ -42,8 +39,8 @@ Spring use bellow configuration to use h2 database automatically
 
 spring.jpa.database-platform = org.hibernate.dialect.H2Dialect# SpringH2Crud
 
-JUST RUN:
-mvn spring-boot:run
-OR
-mvn package
+JUST RUN:<br>
+mvn spring-boot:run<br>
+OR<br>
+mvn package<br>
 java -jar target/{file with jar extension}
